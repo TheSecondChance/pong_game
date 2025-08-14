@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pong Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hud">
+        <div class="score" aria-label="Player score">
+          <span class="label">You</span>
+          <span id="playerScore" class="digits">0</span>
+        </div>
+
+        <div class="controls">
+          <button
+            id="btnToggle"
+            class="btn primary"
+            aria-label="Play or Pause the game"
+          >
+            ▶ Play
+          </button>
+          <button id="btnReset" class="btn" aria-label="Reset the game">
+            ↺ Reset
+          </button>
+        </div>
+
+        <div class="score" aria-label="Computer score">
+          <span class="label">CPU</span>
+          <span id="cpuScore" class="digits">0</span>
+        </div>
+      </header>
+
+      <section class="stage">
+        <canvas
+          id="pong"
+          width="800"
+          height="500"
+          aria-label="Pong game area"
+        ></canvas>
+      </section>
+
+      <footer class="tips">
+        <p>
+          Move with your mouse or Arrow Up/Down. Press Space or click Play to
+          pause/resume.
+        </p>
+      </footer>
+    </main>
+
+    <script src="pong.js"></script>
+  </body>
+</html>
